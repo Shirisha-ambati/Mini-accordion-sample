@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Sample</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+.icon{
+  width: 24px;
+  height: 24px;
+}
+*{
+padding: 0;
+margin:0;
+}
+.Accordion{
+  width:500px;
+  margin:100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+body{
+font-family:"Inter",sans-serif ;
+}
+.text{
+  font-size:20px ;
+  color:#343a40 ;
+  font-weight: 500;
+}
+.icon{
+    font-size:20px ;
+  stroke:#343a40 ;
+  color:#343a40;
+}
+.hidden-box{
+  line-height: 1.6;
+  font-size: 16px;
+  grid-column: 2;
+  color: #343a40;
+  display: none;
+}
+.item{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 16px;
+  row-gap: 24px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.208);
+  padding:30px;
+  border-radius: 10px;
+  background-color: #e7f5ff;
+}
+hr{
+  grid-column: 1/4;
+}
+.open .hidden-box{
+  display: block;
+}
+.open .text,.open .icon{
+  color: #d6336c;
+  stroke: #d6336c;
+}
+</style>
+<body>
+<div class="Accordion">
+  <div class="item open">
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+    </svg>
+    
+    
+    <p class="text">Introduction to Web Development</p>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </svg>
+    <hr>
+    <p class="hidden-box">Web development is the process of creating websites and web applications. It involves a combination of technologies like HTML, CSS, and JavaScript to build interactive. </p>
+  </div>
+  <div class="item">
+<p class="icon">?</p>
+    
+    <p class="text">What is an Accordion Component?
+
+</p>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </svg>
+    <hr>
+    <p class="hidden-box">An accordion is a UI element that allows users to expand and collapse sections of content. It's commonly used in FAQs, menus, and dashboards to organize information efficiently.  </p>
+  </div>
+  <div class="item">
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+</svg>
+
+    <p class="text">Benefits of Using Accordions
+
+</p>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </svg>
+    <hr>
+    <p class="hidden-box">Accordions help reduce clutter on a webpage by showing only relevant information when needed. They improve user experience by making navigation smoother and content more digestible.</p>
+  </div>
+  </div>
+</body>
+</html>
