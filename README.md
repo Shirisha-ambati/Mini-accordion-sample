@@ -31,7 +31,7 @@ accordion-sample/
 🖼️ Demo
 Here’s how the accordion looks:
 
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/b5289456-d4e3-4d7b-a7a7-52713e5c9e5a" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/b5289456-d4e3-4d7b-a7a7-52713e5c9e5a" />
 
 
 
